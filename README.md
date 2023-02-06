@@ -16,10 +16,10 @@ Nuestro [**Servidor**](https://teamarcades.xyz/discord) de Discord nos dedicamos
 **Se requiere Node.js v18.14.0 o superior**.
 
 ```
-npm i replit-uptime
-npm i truchorko5566/replit-uptime
-yarn add replit-uptime
-pnpm add replit-uptime
+npm i replit-uptimer
+npm i truchorko5566/replit-uptimer
+yarn add replit-uptimer
+pnpm add replit-uptimer
 ```
 
 ## ✨ Características
