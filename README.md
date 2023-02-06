@@ -34,13 +34,13 @@ pnpm add replit-uptimer
 **No Config**
 
 ```javascript
-require("replit-uptime").config();
+require("replit-uptimer").config();
 ```
 
 **Con config**
 
 ```javascript
-require("replit-uptime").config({
+require("replit-uptimer").config({
  port: 8080,
  path: "/",
  message: "Siempre online gracias a mi.",
