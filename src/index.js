@@ -1,6 +1,6 @@
 "use strict";
 
-const name = "[replit-uptime]"; 
+const name = "[replit-uptime]"; //zzz...
 
 /**
 function config(options = {}) {
@@ -14,13 +14,13 @@ function config(options = {}) {
  **/
 
 const colors = require("colors");
-const json = require("./config.json");
 const { createServer } = require("node:http");
 
 function config(options = {}) {
- let port = options.port || 3000 || 8080;
+ const port = options.port || 3000 || 8080;
  let createURL = options.path ? options.path.toString() : "/";
- let createResponse = options.message ? options.message.toString() : json.on;
+ let createResponse = options.message ? 
+ options.message.toString() : "!ON FIRE¡";
  const request = async (req, res) => {
   if (options.debug) console.log(`${colors.green.bold(`:: debug :: ${name} => ${req.method.toLowerCase()} ${req.url}`)}`);
   if (req.url === createURL) { res.writeHead(200); return res.end(createResponse); }
@@ -30,7 +30,7 @@ function config(options = {}) {
  server.listen(port, () => { if (options.debug) console.log(`${colors.green.bold(`:: debug :: ${name} => Servidor online en el pueto: ${port}`)}`);});
 }
 
-console.log(`${colors.green.bold(`:: server :: ${name} => online en: localhost:${port}`)}`);
+console.log(`${colors.green.bold(`:: server :: ${name} => online`)}`);
 
 module.exports = { config };
 
