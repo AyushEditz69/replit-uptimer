@@ -14,13 +14,13 @@ function config(options = {}) {
  **/
 
 const colors = require("colors");
-const config = require("./config.json");
+const json = require("./config.json");
 const { createServer } = require("node:http");
 
 function config(options = {}) {
  let port = options.port || 3000 || 8080;
  let createURL = options.path ? options.path.toString() : "/";
- let createResponse = options.message ? options.message.toString() : config.on;
+ let createResponse = options.message ? options.message.toString() : json.on;
  const request = async (req, res) => {
   if (options.debug) console.log(`${colors.green.bold(`:: debug :: ${name} => ${req.method.toLowerCase()} ${req.url}`)}`);
   if (req.url === createURL) { res.writeHead(200); return res.end(createResponse); }
