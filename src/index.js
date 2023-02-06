@@ -1,6 +1,6 @@
 "use strict";
 
-var name = "[replit-uptime]"; 
+const name = "[replit-uptime]"; 
 
 /**
 function config(options = {}) {
